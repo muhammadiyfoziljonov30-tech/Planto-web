@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sekuya&display=swap');
+
+
+.inter{
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1700px;
+  margin: 0 auto;
+} 
+
+body{
+  background-color: #1B2316;
+}

@@ -3,24 +3,27 @@ import Home from "./sections/Home"
 import More from "./sections/More"
 import Contact from "./sections/Contact"
 import PlantsType from "./sections/PlantsType";
+import { MyProvider } from "./context/CreateContext";
 export default function App() {
   return (
     <>
-      <Navbar />
-      <main>
-        <section id="home">
-          <Home />
-        </section>
+      <MyProvider>
+        <Navbar />
+        <main>
+          <section id="home">
+            <Home />
+          </section>
 
-        <section id="plants-type">
-          <PlantsType />
-        </section>
+          <section id="plants-type">
+            <PlantsType />
+          </section>
 
-        <section id="more">
-          <More />
-        </section>
-      </main>
-      <Contact />
+          <section id="more">
+            <More />
+          </section>
+        </main>
+        <Contact />
+      </MyProvider>
     </>
   )
 }

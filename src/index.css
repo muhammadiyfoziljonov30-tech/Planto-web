@@ -4,7 +4,7 @@
 
 
 .inter{
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter ital', sans-serif;
 }
 
 .container {
@@ -14,5 +14,42 @@
 
 body{
   background-color: #1B2316;
+}
+
+.trendy-container {
+  position: relative; /* Burchaklar shu blokga nisbatan joylashishi uchun */
+  display: inline-block;
+  padding: 20px 40px;
+  color: white;
+}
+
+/* Chap pastki burchak */
+.trendy-container::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  width: 40px;  /* Burchakning eni */
+  height: 40px; /* Burchakning bo'yi */
+  border-left: 3px solid #7ed321; /* Chap chiziq */
+  border-bottom: 3px solid #7ed321; /* Pastki chiziq */
+  border-bottom-left-radius: 15px; /* Burchakni aylana qilish */
+}
+
+/* O'ng yuqori burchak */
+.trendy-container::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  border-right: 3px solid #7ed321; /* O'ng chiziq */
+  border-top: 3px solid #7ed321; /* Yuqori chiziq */
+  border-top-right-radius: 15px; /* Burchakni aylana qilish */
+}
+
+.card-right{
+  right: 0;
 }
 

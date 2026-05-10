@@ -7,10 +7,10 @@ export const MyProvider = ({ children }) => {
 
     const [isOpen, setIsOpen] = useState(false); 
 
-    const toggle = () => setIsOpen(!isOpen); // Funksiya
+    const toggle = () => setIsOpen(!isOpen); 
+
 
     return (
-        // 2. Value ichida uzatiladigan ma'lumotlar beriladi
         <MyContext.Provider 
         value={{ 
             isOpen, 

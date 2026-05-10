@@ -2,12 +2,15 @@ import Button from "../UI/Button";
 import { GoPlay } from "react-icons/go";
 import GlassCard from "./GlassCard";
 import flower from '../assets/Flower.webp';
+import RatingCard from "./RatingCard";
+import Photo from '../assets/Photo.webp';
 
 export default function Natureal() {
     return (
-        <div className="mt-42.5 flex">
-            <div>
+        <div className="pt-42.5 flex items-center justify-between">
+            <div className="flex flex-col items-start gap-61.5">
                 <div>
+                    <div>
                     <h1 className="text-white text-[118px]">Breath Natureal </h1>
                     <p className="text-white text-2xl w-223.25">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
@@ -19,6 +22,10 @@ export default function Natureal() {
                         <GoPlay size={48} className="text-white" />
                         <p className="text-white">Live Demo...</p>
                     </button>
+                </div>
+                </div>
+                <div>
+                    <RatingCard photo={Photo} title={'Maxn Raval'} review={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,'}/>
                 </div>
             </div>
             <div>

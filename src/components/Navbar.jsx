@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <nav>
-      <div className="container py-10 px-4 flex justify-between items-center ">
+      <div className="container py-5 px-4 flex justify-between items-center ">
         <Logo onClick={scrollToTop} />
         <Links />
         <Icons />

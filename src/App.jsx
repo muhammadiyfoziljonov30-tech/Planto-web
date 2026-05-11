@@ -2,8 +2,9 @@ import Navbar from "./components/Navbar";
 import Home from "./sections/Home"
 import More from "./sections/More"
 import Contact from "./sections/Contact"
-import PlantsType from "./sections/PlantsType";
 import { MyProvider } from "./context/CreateContext";
+import TopPlants from "./sections/TopPlants";
+import Review from "./sections/Review";
 export default function App() {
   return (
     <>
@@ -14,8 +15,12 @@ export default function App() {
             <Home />
           </section>
 
-          <section id="plants-type">
-            <PlantsType />
+          <section id="top-plants">
+            <TopPlants />
+          </section>
+
+          <section id="review">
+            <Review/>
           </section>
 
           <section id="more">

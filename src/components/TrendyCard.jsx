@@ -1,7 +1,8 @@
 import { LiaShoppingBagSolid } from "react-icons/lia";
 import Button from "../UI/Button";
+import { MdChevronRight } from "react-icons/md";
 
-export default function TrendyCard({ image, title, desc, price, className, isReverse }) {
+export default function TrendyCard({ image, title, desc, price, className, isReverse, isBag, isNext }) {
     return (
         <div className="backdrop-blur-2xl border border-white/50 bg-white/5 rounded-[151px] w-404.75 mt-35">
             <div className={`flex items-center justify-end gap-54.5 relative ${className}`}>
@@ -16,9 +17,21 @@ export default function TrendyCard({ image, title, desc, price, className, isRev
                         <Button>
                             Explore
                         </Button>
-                        <Button className={`p-2.5!`}>
-                            <LiaShoppingBagSolid size={30} />
-                        </Button>
+                        {isBag && (
+                            <Button className={`p-2.5!`}>
+                                <LiaShoppingBagSolid size={30} />
+                            </Button>
+                        )}
+                        {isNext && (
+                            <div>
+                                <button style={{rotate: '180deg'}} className={`cursor-pointer p-2 rounded-full border border-white text-white`}>
+                                    <MdChevronRight size={30}/>
+                                </button>
+                                <button className={`cursor-pointer p-2 rounded-full border border-white text-white`}>
+                                    <MdChevronRight size={30} />
+                                </button>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>

@@ -49,7 +49,7 @@ export default function TopSellingCard() {
         <div className="container">
             <div className="grid grid-cols-3 gap-10.5">
                 {plants.map((plant) => (
-                    <div key={plant.id} className="backdrop-blur-2xl border border-white/50 bg-white/5 rounded-[77px] p-5 w-lg h-161 relative flex flex-col items-start justify-end my-10">
+                    <div key={plant.id} className="cursor-pointer  hover:scale-105 duration-300 backdrop-blur-2xl border border-white/50 bg-white/5 rounded-[77px] p-5 w-lg h-161 relative flex flex-col items-start justify-end my-10">
                         <img src={plant.img} alt={plant.name} className="w-115 absolute -top-35" />
                         <div className="flex flex-col gap-9.75 py-13 px-16.5">
                             <h3 className="text-white text-[38px]">{plant.name}</h3>

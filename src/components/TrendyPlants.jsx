@@ -10,9 +10,9 @@ export default function TrendyPlants() {
                 </div>
                 <div>
                     <TrendyCard image={flawor} title={'For Small Decs Ai Plat'} desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'}
-                        price={'Rs. 599/-'} isReverse={true}/>
+                        price={'Rs. 599/-'} isReverse={true} isBag={true}/>
                     <TrendyCard image={aloe} title={'For Small Decs Ai Plat'} desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'}
-                        price={'Rs. 579/-'} isReverse={false} className={`flex-row-reverse!`}/>
+                        price={'Rs. 579/-'} isReverse={false} isBag={true} className={`flex-row-reverse!`}/>
                 </div>
             </div>
         </div>

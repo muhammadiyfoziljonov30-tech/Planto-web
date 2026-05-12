@@ -13,7 +13,7 @@ export default function TrendyCard({ image, title, desc, price, className, isRev
                     <h3 className='text-[38px] text-white font-bold'>{title}</h3>
                     <p className='text-[20px] text-gray-400 w-183'>{desc}</p>
                     <p className='text-[38px] text-white font-bold'>{price}</p>
-                    <div className="flex items-center gap-8">
+                    <div className="flex items-center gap-10">
                         <Button>
                             Explore
                         </Button>
@@ -23,9 +23,9 @@ export default function TrendyCard({ image, title, desc, price, className, isRev
                             </Button>
                         )}
                         {isNext && (
-                            <div>
-                                <button style={{rotate: '180deg'}} className={`cursor-pointer p-2 rounded-full border border-white text-white`}>
-                                    <MdChevronRight size={30}/>
+                            <div className="flex items-center gap-5">
+                                <button style={{ rotate: '180deg' }} className={`cursor-pointer p-2 rounded-full border border-white text-white`}>
+                                    <MdChevronRight size={30} />
                                 </button>
                                 <button className={`cursor-pointer p-2 rounded-full border border-white text-white`}>
                                     <MdChevronRight size={30} />
